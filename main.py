@@ -55,10 +55,9 @@ def search_by_hashtag(hashtag):
 
     for url in urls:
         browser.get(url)
-        time.sleep(random.randrange(2, 5))
-        like = browser.find_elements(By.XPATH, "/html/body/div[1]/section/main/div/div[1]/article/div[3]/section[1]/span[1]/button")
+        like = browser.find_elements(By.XPATH, "/html/body/div[2]/div/div/div[3]/div/div/div[1]/div/div[3]/div/div/div/div/div[2]/div/article/div/div[3]/div/div/section[1]/span[1]/button/div[1]/svg")
         like.click()
-        time.sleep(random.randrange(85, 105))
+        time.sleep(10000)
 
     # for item in hrefs:
     #     href = item.get_attribute('href')
